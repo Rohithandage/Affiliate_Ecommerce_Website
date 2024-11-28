@@ -89,7 +89,7 @@ const HorizontalCardProduct = ({category, heading}) => {
                                 <p className='text-slate-500 line-through'>{ displayINRCurrency(product?.price)  }</p>
                             </div>
                             <a href={product.link} target="_blank" rel="noopener noreferrer">
-                            <button className='text-sm bg-green-600 hover:bg-green-700 text-white px-3 py-0.5 rounded-full'>Buy Now</button>
+                            <button className='text-sm bg-green-600 hover:bg-green-700 text-white px-3 py-0.5 rounded-full'>More Details</button>
       </a>
                            
                         </div>

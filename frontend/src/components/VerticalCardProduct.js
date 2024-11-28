@@ -73,6 +73,7 @@ const VerticalCardProduct = ({category, heading}) => {
                                     <img src={product.productImage[0]} className='object-scale-down h-full hover:scale-110 transition-all mix-blend-multiply'/>
                                 </div>
                                 <div className='p-4 grid gap-3'>
+                                 <div className='text-sm text-blue-600 underline-offset-2'>{product?.brandName}</div>
                                     <h2 className='font-medium text-base md:text-lg text-ellipsis line-clamp-1 text-black'>{product?.productName}</h2>
                                     <p className='capitalize text-slate-500'>{product?.category}</p>
                                     <div className='flex gap-3'>
@@ -80,7 +81,7 @@ const VerticalCardProduct = ({category, heading}) => {
                                         <p className='text-slate-500 line-through'>{ displayINRCurrency(product?.price)  }</p>
                                     </div>
                                     <a href={product.link} target="_blank" rel="noopener noreferrer">
-                            <button className='text-sm bg-green-600 hover:bg-green-700 text-white px-3 py-0.5 rounded-full'>Buy Now</button>
+                            <button className='text-sm bg-green-600 hover:bg-green-700 text-white px-3 py-0.5 rounded-full'>More Details</button>
       </a>                                </div>
                             </div>
                         )

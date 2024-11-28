@@ -20,7 +20,7 @@ const BannerProduct = () => {
     const [currentImage,setCurrentImage] = useState(0)
 
     const desktopImages = [
-        image1,
+    
         image2,
         image3,
         image4,

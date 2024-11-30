@@ -2,11 +2,10 @@ import React, { useContext } from 'react'
 import scrollTop from '../helpers/scrollTop'
 import displayINRCurrency from '../helpers/displayCurrency'
 import Context from '../context'
-import addToCart from '../helpers/addToCart'
 
 const VerticalCard = ({loading,data = []}) => {
     const loadingList = new Array(13).fill(null)
-    const { fetchUserAddToCart } = useContext(Context)
+   
 
   
 

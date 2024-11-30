@@ -8,7 +8,9 @@ const router = require('./routes')
 
 const app = express()
 app.use(cors({
-    origin : process.env.FRONTEND_URL,
+ origin : process.env.FRONTEND_URL,
+    methods:["GET","POST","PUT","DELETE","OPTIONS"],
+    Headers:['Content-Type', 'Authorization'],
     credentials : true
 }))
 app.use(express.json())

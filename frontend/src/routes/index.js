@@ -1,12 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import App from '../App'
 import Home from '../pages/Home'
-import Login from '../pages/Login'
-import ForgotPassowrd from '../pages/ForgotPassowrd'
-import SignUp from '../pages/SignUp'
-import AdminPanel from '../pages/AdminPanel'
-import AllUsers from '../pages/AllUsers'
-import AllProducts from '../pages/AllProducts'
 import CategoryProduct from '../pages/CategoryProduct'
 import SearchProduct from '../pages/SearchProduct'
 
@@ -20,38 +14,12 @@ const router = createBrowserRouter([
                 element : <Home/>
             },
             {
-                path : "login",
-                element : <Login/>
-            },
-            {
-                path : "forgot-password",
-                element : <ForgotPassowrd/>
-            },
-            {
-                path : "sign-up",
-                element : <SignUp/>
-            },
-            {
                 path : "product-category",
                 element : <CategoryProduct/>
             },
             {
                 path : "search",
                 element : <SearchProduct/>
-            },
-            {
-                path : "admin-panel",
-                element : <AdminPanel/>,
-                children : [
-                    {
-                        path : "all-users",
-                        element : <AllUsers/>
-                    },
-                    {
-                        path : "all-products",
-                        element : <AllProducts/>
-                    }
-                ]
             },
         ]
     }

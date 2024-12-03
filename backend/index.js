@@ -9,7 +9,7 @@ const router = require('./routes')
 const app = express()
 app.use(cors({
  origin : process.env.FRONTEND_URL,
-    methods:["GET","POST","PUT","DELETE","OPTIONS"],
+    methods:["GET","POST"],
     Headers:['Content-Type', 'Authorization'],
     credentials : true
 }))
